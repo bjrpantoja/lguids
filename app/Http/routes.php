@@ -103,8 +103,3 @@ Route::group(['middleware' => 'auth'], function() {
 		get('backdoor/settings/msgs', 'backend\SettingController@msgs');
 	});
 });
-
-
-get('test', function() {
-		dd("VCS testing");
-});
