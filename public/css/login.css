@@ -1,0 +1,54 @@
+/* Fonts */
+@font-face {
+    font-family: 'titillium_webregular';
+    src: url('../fonts/webfonts/titilliumweb-regular-webfont.eot');
+    src: url('../fonts/webfonts/titilliumweb-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/webfonts/titilliumweb-regular-webfont.woff') format('woff'),
+         url('../fonts/webfonts/titilliumweb-regular-webfont.ttf') format('truetype'),
+         url('../fonts/webfonts/titilliumweb-regular-webfont.svg#titillium_webregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Fonts */
+
+html, body {
+	font-family: 'titillium_webregular', Tahoma, serif;
+	color: #666666;
+	width: 100%;
+	height: 100%;
+	padding-top: 150px;
+	margin: 0;
+	border: 0;
+	min-height: 100%;
+	background: rgb(241, 241, 241);
+}
+
+.input-group-padding {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-bottom: 10px !important;
+}
+
+.panel-plain {
+	border-radius: 0px !important;
+	border: none !important;
+	padding: 0px !important;
+}
+
+.no-border-radius {
+	margin-bottom: 10px;
+	border-radius: 0px !important;
+}
+
+.center {
+    margin: auto;
+    width: 350px;
+}
+
+.login-btn {
+	border-radius: 0px !important;
+}
+
+.panel-heading {
+	background-color: white !important;
+}

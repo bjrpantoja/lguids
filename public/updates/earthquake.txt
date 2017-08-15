@@ -1,0 +1,8 @@
+DateTime: 17 Apr 2017  10:52:35 AM
+Location: 13.90N, 120.88E  006 km N 40 W of San Luis Batangas
+Depth of Focus Km: 033
+Origin: TECTONIC
+Magnitude: Ms 2.2
+Expecting Damage: NO
+Expecting Aftershocks: NO
+Issued On: 17 Apr 2017  11:02 AM
