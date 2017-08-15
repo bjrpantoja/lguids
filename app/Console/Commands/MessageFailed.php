@@ -2,7 +2,7 @@
 
 namespace app\Console\Commands;
 
-use app\Models\Log;
+use app\Models\SmsLog;
 use app\Models\Bulletin;
 use Illuminate\Console\Command;
 
