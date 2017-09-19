@@ -19,13 +19,13 @@ foreach($sms_header_lines as $header) {
 }
 
 if($sms_type == "SENT") {
-	echo shell_exec('cd /var/web/lguids-v4; php artisan sms:sent '.$sms_headers['Type'].' '.$sms_headers['bId'].' '.$sms_headers['rId']);
+	echo shell_exec('cd /var/web/lguids; php artisan sms:sent '.$sms_headers['Type'].' '.$sms_headers['bId'].' '.$sms_headers['rId']);
 }
 elseif($sms_type == "FAILED") {
-	echo shell_exec('cd /var/web/lguids-v4; php artisan sms:failed '.$sms_headers['Type'].' '.$sms_headers['bId'].' '.$sms_headers['rId']);
+	echo shell_exec('cd /var/web/lguids; php artisan sms:failed '.$sms_headers['Type'].' '.$sms_headers['bId'].' '.$sms_headers['rId']);
 }
 elseif($sms_type == "RECEIVED") {
-	echo shell_exec('cd /var/web/lguids-v4; php artisan sms:received '.$sms_headers['From'].' '.escapeshellarg($sms_message_body));
+	echo shell_exec('cd /var/web/lguids; php artisan sms:received '.$sms_headers['From'].' '.escapeshellarg($sms_message_body));
 }
 
 ?>

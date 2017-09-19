@@ -1,0 +1,1 @@
+KERNEL=="ttyUSB*", SUBSYSTEMS=="usb-serial", ATTRS{port_number}=="0", SYMLINK+="gsm_modem"
