@@ -63,3 +63,5 @@ mysql -u root -plguids007 < /var/web/lguids/tools/lguidsuser.sql
 
 # run migration and seeders
 (cd /var/web/lguids; php artisan migrate:refresh --seed)
+
+crontab /var/web/lguids/tools/crontab.txt
