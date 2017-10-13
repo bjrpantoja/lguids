@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# install composer
-(cd ~; curl -s http://getcomposer.org/installer | php) 
-sudo mv ~/composer.phar /usr/local/bin
-alias composer='/usr/local/bin/composer.phar'
-
 # update ubuntu
 sudo apt-get update -y
 sudo apt-get upgrade -y
@@ -15,7 +10,14 @@ sudo chmod u+s /sbin/shutdown
 sudo chmod u+s /sbin/reboot
 
 # apache
+sudo apt-get install php5-cli
 sudo apt-get install apache2 -y
+
+# install composer
+(cd ~; curl -s http://getcomposer.org/installer | php) 
+sudo mv ~/composer.phar /usr/local/bin
+alias composer='/usr/local/bin/composer.phar'
+
 
 # mysql
 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql

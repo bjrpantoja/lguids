@@ -224,6 +224,7 @@
 					data: { year: year },
 					dataType: "json",
 					success: function(data) {
+						console.log(data);
 						sms_chart.setData(data);
 					}
 				});
