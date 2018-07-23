@@ -10,7 +10,7 @@ sudo chmod u+s /sbin/shutdown
 sudo chmod u+s /sbin/reboot
 
 # apache
-sudo apt-get install php5-cli
+sudo apt-get install php5-cli -y
 sudo apt-get install apache2 -y
 
 # install composer
@@ -20,12 +20,12 @@ alias composer='/usr/local/bin/composer.phar'
 
 
 # mysql
-sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql
+sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql -y
 sudo mysql_install_db
 sudo mysql_secure_installation
 
 # php
-sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt
+sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt -y
 sudo php5enmod mcrypt
 sudo a2enmod rewrite
 sudo service apache2 restart
