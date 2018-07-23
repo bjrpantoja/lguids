@@ -25,7 +25,7 @@ class SettingTableSeeder extends Seeder
         		'st_facebook' 	=> '',
         		'st_twitter' 	=> '',
         		'st_google' 	=> '',
-        		'st_address' 	=> 'http://handa.region4a.dost.gov.ph/',
+        		'st_address' 	=> 'http://handa.dostcalabarzon.ph/',
         	]);
     }
 }
