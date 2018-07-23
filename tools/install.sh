@@ -68,4 +68,4 @@ mysql -u root -plguids007 < /var/web/lguids/tools/lguidsuser.sql
 
 sudo service apache2 restart
 
-crontab /var/web/lguids/tools/crontab.txt
+cron /var/web/lguids/tools/crontab.txt
