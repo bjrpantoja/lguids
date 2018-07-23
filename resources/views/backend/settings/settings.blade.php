@@ -5,7 +5,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="pull-left">
-						<h3><strong>Handa Settings</strong></h3>
+						<h3><strong>Settings</strong></h3>
 					</div>
 					<div class="pull-right">
 					</div>
