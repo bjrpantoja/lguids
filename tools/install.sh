@@ -14,10 +14,7 @@ sudo apt-get install php5-cli -y
 sudo apt-get install apache2 -y
 
 # install composer
-(cd ~; curl -s http://getcomposer.org/installer | php) 
-sudo mv ~/composer.phar /usr/local/bin
-alias composer='/usr/local/bin/composer.phar'
-
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
 
 # mysql
 sudo apt-get install mysql-server libapache2-mod-auth-mysql php5-mysql -y
