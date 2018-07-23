@@ -10,7 +10,7 @@ sudo chmod u+s /sbin/shutdown
 sudo chmod u+s /sbin/reboot
 
 # apache
-sudo apt-get install php5-cli -y
+sudo apt-get install php5-cli curl -y
 sudo apt-get install apache2 -y
 
 # install composer
