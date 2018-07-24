@@ -65,4 +65,4 @@ mysql -u root -plguids007 < /var/web/lguids/tools/lguidsuser.sql
 
 sudo service apache2 restart
 
-crontab /var/web/lguids/tools/crontab.txt
+(crontab -l ; echo "* * * * * php /var/web/lguids/artisan schedule:run >> /dev/null 2>&1") | sort - | uniq - | crontab -
