@@ -44,7 +44,7 @@
 							<div class="form-group {{ $option == 'View' ? 'hidden' : ''}}">
 								<div class="col-md-3 col-md-offset-2">
 									{!! Form::button('<span class="fa fa-check"></span> Save', ['class' => 'btn btn-primary btn-sm', 'type' => 'submit']) !!}
-									<a href="{{ url('backdoor/sensors') }}" class="btn btn-warning btn-sm"><span class="fa fa-arrow-left"></span> Cancel</a>
+									<a href="{{ url('backdoor/groups') }}" class="btn btn-warning btn-sm"><span class="fa fa-arrow-left"></span> Cancel</a>
 								</div>
 							</div>
 						</div>
