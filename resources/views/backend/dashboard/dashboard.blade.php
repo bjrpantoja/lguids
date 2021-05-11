@@ -170,18 +170,6 @@
 			line_chart(year);
 			bar_chart(year);
 
-			$.ajax({
-				url: '{{ url("backdoor/dashboard/pie_chart_data") }}',
-				type: 'get',
-				data: { year: year },
-				dataType: "json",
-				success: function(data) {
-					Morris.Donut({
-							  element: 'bulletin-stat',
-							  data: data
-					});
-				}
-			});
 			
 			$('#sms-year').change(function() {
 				year = $(this).val();
@@ -238,6 +226,7 @@
 					data: { year: year },
 					dataType: "json",
 					success: function(data) {
+						console.log(data);
 						bulletin_chart.setData(data);
 					}
 				});

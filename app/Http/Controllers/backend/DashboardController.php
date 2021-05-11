@@ -57,7 +57,7 @@ class DashboardController extends Controller
 		}
 		for ($i=0; $i<12; $i++) {
 			foreach($bt_type as $bt) {
-				$chart_data[$i][$bt->bt_name] = Bulletin::where('bt_id', '=', $bt->bt_id)->where('bl_type', '=', 'Auto')->whereYear('created_at', '=', Input::get('year'))->whereMonth('created_at', '=', $i)->count();
+				$chart_data[$i][$bt->bt_name] = Bulletin::where('bt_id', '=', $bt->bt_id)->where('bl_type', '=', 'Auto')->whereYear('created_at', '=', Input::get('year'))->whereMonth('created_at', '=', $i+1)->count();
 			}
 		}
 		return json_encode($chart_data);
