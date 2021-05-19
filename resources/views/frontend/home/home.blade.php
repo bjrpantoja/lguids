@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<iframe src="{{ $ip }}/#embed-map" frameborder="no" width="100%" scrolling="no" height="775"></iframe>
+					<iframe src="{{ $ip }}/lguids/map" frameborder="no" width="100%" scrolling="no" height="775"></iframe>
 				</div>
 			</div>
 		</div>
