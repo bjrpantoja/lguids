@@ -83,6 +83,14 @@ Route::group(['middleware' => 'auth'], function() {
 	post('backdoor/inbox/get_last_msg', 'backend\InboxController@get_last_msg');
 	post('backdoor/inbox/send_ajax', 'backend\InboxController@send_ajax');
 
+	// Settings Route
+	get('backdoor/settings', 'backend\SettingController@index');
+	post('backdoor/settings/save', 'backend\SettingController@save');
+	get('backdoor/settings/purge', 'backend\SettingController@purge');
+	get('backdoor/settings/logs', 'backend\SettingController@logs');
+	get('backdoor/settings/gsm', 'backend\SettingController@gsm');
+	get('backdoor/settings/msgs', 'backend\SettingController@msgs');
+	
 	Route::group(['middleware' => 'auth.admin'], function() {
 
 		// Users Route
@@ -93,13 +101,5 @@ Route::group(['middleware' => 'auth'], function() {
 		get('backdoor/users/edit/{id}', 'backend\UserController@edit');
 		get('backdoor/users/save', 'backend\UserController@save');
 		post('backdoor/users/save', 'backend\UserController@save');
-
-		// Settings Route
-		get('backdoor/settings', 'backend\SettingController@index');
-		post('backdoor/settings/save', 'backend\SettingController@save');
-		get('backdoor/settings/purge', 'backend\SettingController@purge');
-		get('backdoor/settings/logs', 'backend\SettingController@logs');
-		get('backdoor/settings/gsm', 'backend\SettingController@gsm');
-		get('backdoor/settings/msgs', 'backend\SettingController@msgs');
 	});
 });
