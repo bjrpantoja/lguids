@@ -32,8 +32,8 @@
 				<ul class="nav navbar-nav navbar-left">
 					@if(Auth::user()->is_admin == 1)
 						<li {{(Request::is('backdoor/users') || (Request::is('backdoor/users/add')) || (Request::is('backdoor/users/edit/'.Request::segment(4))) || (Request::is('backdoor/users/search')) ? 'class=active' : '')}}><a href="{{ url('backdoor/users') }}"><span class="fa fa-users fa-fw"></span> Users</a></li>
-						<li {{(Request::is('backdoor/settings') ? 'class=active' : '')}}><a href="{{ url('backdoor/settings') }}"><span class="fa fa-cog fa-fw"></span> Settings</a></li>
 					@endif
+					<li {{(Request::is('backdoor/settings') ? 'class=active' : '')}}><a href="{{ url('backdoor/settings') }}"><span class="fa fa-cog fa-fw"></span> Settings</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li {{(Request::is('backdoor/dashboard') ? 'class=active' : '') }}><a href="{{ url('backdoor/dashboard')}}"><span class="fa fa-bar-chart fa-fw"></span> Dashboard</a></li>
